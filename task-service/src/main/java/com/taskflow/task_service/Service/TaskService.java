@@ -38,6 +38,8 @@ public class TaskService {
         return taskRepository.findById(taskId).orElse(null);
     }
 
+    public void deleteTask(int taskId){ taskRepository.deleteById(taskId);}
+
     public ResponseEntity<Resource> getFileFromTask(int taskId)
     {
        String attachmentId =  taskRepository.findAttachmentIdByTaskId(taskId).orElseThrow();
