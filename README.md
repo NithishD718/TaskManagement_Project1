@@ -13,12 +13,7 @@ Welcome to the Task Management Microservices project. This application is design
 
 ## Overview
 
-The Task Management Project is a comprehensive solution built on a microservices architecture with the Spring Boot framework. It streamlines task organization and enhances user management with modular, scalable services. Key components include:
-
-- **Discovery Service**: For dynamic service tracking.
-- **Gateway Service**: For efficient request routing and load balancing.
-- **Dedicated Services**: For file handling, user authentication, and task notifications.
-
+The Task Management Project is a comprehensive solution built on a microservices architecture with the Spring Boot framework. It streamlines task organization and enhances user management with modular, scalable services. Key components include: Discovery Service for dynamic service trackin, Gateway Service for efficient request routing and load balancing, Dedicated Services for file handling, user authentication, and task notifications.
 Users can securely register and log in through JWT authentication, manage tasks with functionalities like creation, updating, deletion, and seamlessly attach or download files. The Notification Service provides real-time email updates to keep users informed on task changes. This project lays a robust foundation for efficient task management, emphasizing security, scalability, and ease of integration, making it ideal for team collaboration and organizational productivity.
 
 
