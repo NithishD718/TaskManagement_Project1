@@ -8,10 +8,6 @@ Welcome to the Task Management Microservices project. This application is design
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
-  - [Installation](#installation)
-  - [Configuration](#configuration)
-  - [Usage](#usage)
-  - [Check Service Status](#check-service-status)
 - [API Endpoints](#api-endpoints)
 
 
@@ -28,30 +24,30 @@ Users can securely register and log in through JWT authentication, manage tasks 
 
 ## Features
 
-### User Service
+### User Service:
 - **Authentication & Authorization**: Handles secure login and registration with JWT-token-based authentication.
 - **Security Configuration**: Uses custom web security settings to filter and validate requests.
 - **Database Integration**: Stores user registration data in PostgreSQL for login and access management.
 
-### Task Service
+### Task Service:
 - **Core Task Management**: Manages essential task actions such as create, update, delete, and view, with support for file attachments via multipart upload.
 - **Service Integration & Communication**: Seamlessly interacts with User, Notification, and File Services using Spring's RestTemplate and WebClient for efficient inter-service communication.
 - **Resilience & Logging**: Employs circuit breaker patterns for fault tolerance and SLF4J for comprehensive logging.
 - **Data Persistence**: Task data is securely stored in PostgreSQL, ensuring consistency and easy access.
 
-### Notify Service
+### Notify Service:
 - **Email Notifications**: Sends automated email updates to users upon task actions, keeping them informed in real time.
 - **Simple Email Composition**: Leverages Spring’s built-in mail framework to efficiently compose and dispatch emails to user addresses.
 
-### File Service
+### File Service:
 - **Attachment Upload**: Manages file uploads by extracting multipart files and securely storing them as attachments within the database.
 - **Attachment Retrieval**: Provides a streamlined download API for secure access and retrieval of stored attachments.
 
-### Discovery Service
+### Discovery Service:
 - **Service Registration and Tracking**: Utilizes Netflix Eureka for registering and monitoring all services, enabling quick status checks for uptime and availability.
 - **Enhanced Service Visibility**: Allows for centralized tracking, making it easier to manage and monitor each service in the microservice ecosystem.
 
-### Gateway Service
+### Gateway Service:
 - **API Gateway Functionality**: Acts as a single entry point for client requests, routing them to the appropriate microservices.
 - **Load Balancing**: Distributes incoming requests across multiple service instances to optimize resource usage and ensure high availability.
 
@@ -76,18 +72,18 @@ Users can securely register and log in through JWT authentication, manage tasks 
 
 To get started with the project, make sure you have the required tools and dependencies installed.
 
-### Installation
+### Installation:
 1. Clone this repository: [https://github.com/NithishD718/TaskManagement_Project1.git](https://github.com/NithishD718/TaskManagement_Project1.git)
 2. Navigate to the project directory: 
    ```bash
    cd TaskManagement_Project1
-### Configuration
+### Configuration:
 Configure the properties of each microservice according to your requirements.
 
-### Usage
+### Usage:
 Run each microservice individually to start the Task Management system.
 
-### Check Service Status
+### Check Service Status:
 You can check the status of all registered microservices here. It will show which services are up and running and their corresponding instances.  
 **Eureka Dashboard:** [http://localhost:8761](http://localhost:8761)
 
